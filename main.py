@@ -1,3 +1,4 @@
+# Function to calculate with 2 numbers and an oeprator as inputs
 def calculation(x, y, operator):
     
     try:
@@ -14,7 +15,7 @@ def calculation(x, y, operator):
             total = x / y
             return total
         
-    except ZeroDivisionError:
+    except ZeroDivisionError: # Handling zero division error
         print("Division by zero is invalid!!!")
     
 num1 = float(input("Enter a number : "))
@@ -24,6 +25,7 @@ ops = ['+', '-', 'x', '/']
 while True:
     operator = input("Enter the operator you would like to use : ")
 
+    # Validating the operator which the user inputs
     if operator not in ops:
         print('''Your selected operator is invalid.
               Please use one of the following symbols :
