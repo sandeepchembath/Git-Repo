@@ -38,5 +38,4 @@ while True:
 
 
 calc = calculation(num1, num2, operator)
-print(calc)
-    
+print(f"The value of {num1} {operator} {num2} is {calc}.")  
